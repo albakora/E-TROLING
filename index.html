@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-TROLING LAPAS KLS IIB MERAUKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="PENGAYOMAN.png" alt="Logo PENGAYOMAN">
+            <img src="PERMASYARAKAN.jpg" alt="Logo PERMASYARAKAN">
+        </div>
+        <h1>E-TROLING LAPAS KLS IIB MERAUKE</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="submit_form.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Nama Petugas:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Waktu:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Shift:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="shift1" name="shift[]" value="Pagi">
+                        <label for="shift1">Dinas Pagi</label>
+                        <input type="checkbox" id="shift2" name="shift[]" value="Siang">
+                        <label for="shift2">Dinas Siang</label>
+                        <input type="checkbox" id="shift3" name="shift[]" value="Malam">
+                        <label for="shift3">Dinas Malam</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Titik:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="Titik1" name="Titik[]" value="Titik1">
+                        <label for="Titik1">Titik 1</label>
+                        <input type="checkbox" id="Titik2" name="Titik[]" value="Titik2">
+                        <label for="Titik2">Titik 2</label>
+                        <input type="checkbox" id="Titik3" name="Titik[]" value="Titik3">
+                        <label for="Titik3">Titik 3</label>
+                        <input type="checkbox" id="Titik4" name="Titik[]" value="Titik4">
+                        <label for="Titik4">Titik 4</label>
+                        <input type="checkbox" id="Titik5" name="Titik[]" value="Titik5">
+                        <label for="Titik5">Titik 5</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="situasi">Situasi:</label>
+                    <textarea id="situasi" name="situasi" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file">Bukti Dokumentasi:</label>
+                    <input type="file" id="file" name="file" accept="image/*" required>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-TROLING LAPAS KLS IIB MERAUKE. All rights reserved.</p>
+    </footer>
+</body>
+</html>
