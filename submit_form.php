@@ -45,8 +45,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $name = cleanInput($_POST['name'] ?? '');
         $date = cleanInput($_POST['date'] ?? '');
-        $shift = isset($_POST['shift']) ? implode(', ', array_map('cleanInput', $_POST['shift'])) : 'Tidak ada shift yang dipilih';
-        $titik = isset($_POST['Titik']) ? implode(', ', array_map('cleanInput', $_POST['Titik'])) : 'Tidak ada Titik yang dipilih';
+        $rupam = cleanInput($_POST['rupam'] ?? '');
+        $shift = cleanInput($_POST['shift'] ?? '');
+        $blok = cleanInput($_POST['blok'] ?? '');
         $situasi = cleanInput($_POST['situasi'] ?? '');
 
         $dest_path = handleFileUpload($_FILES['file']);
@@ -82,10 +83,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>Data pengisian form baru:</p>
             <table>
                 <tr><th>1. Nama Petugas</th><td>$name</td></tr>
-                <tr><th>2. Waktu</th><td>$date</td></tr>
-                <tr><th>Shift</th><td>$shift</td></tr>
-                <tr><th>Titik</th><td>$titik</td></tr>
-                <tr><th>Situasi</th><td>$situasi</td></tr>
+                <tr><th>2. Rupam</th><td>$rupam</td></tr>
+                <tr><th>3. Waktu</th><td>$date</td></tr>
+                <tr><th>4. Shift</th><td>$shift</td></tr>
+                <tr><th>5. Blok</th><td>$blok</td></tr>
+                <tr><th>6. Situasi</th><td>$situasi</td></tr>
             </table>
         </body>
         </html>";
