@@ -9,8 +9,8 @@
 <body>
     <header>
         <div class="logo">
-            <img src="PENGAYOMAN.png" alt="Logo PENGAYOMAN">
-            <img src="PERMASYARAKAN.jpg" alt="Logo PERMASYARAKAN">
+            <img src="PENGAYOMAN.png" alt="Logo PENGAYOMAN" class="logo-image">
+            <img src="PERMASYARAKAN-removebg-preview.png" alt="Logo PERMASYARAKAN" class="logo-image">
         </div>
         <h1>E-TROLING LAPAS KLS IIB MERAUKE</h1>
     </header>
@@ -21,35 +21,42 @@
                     <label for="name">Nama Petugas:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
+                <div class="form-group custom-select">
+                    <label for="rupam">Rupam:</label>
+                    <select id="rupam" name="rupam" required>
+                        <option value="">Pilih Rupam</option>
+                        <option value="Rupam I">Rupam I</option>
+                        <option value="Rupam II">Rupam II</option>
+                        <option value="Rupam III">Rupam III</option>
+                        <option value="Rupam IV">Rupam IV</option>
+                    </select>
+                </div>
+                <div class="form-group custom-select">
+                    <label for="shift">Shift:</label>
+                    <select id="shift" name="shift" required>
+                        <option value="">Pilih Shift</option>
+                        <option value="Pagi">Pagi</option>
+                        <option value="Siang">Siang</option>
+                        <option value="Malam">Malam</option>
+                    </select>
+                </div>   
+                <div class="form-group custom-select">
+                    <label for="blok">Blok:</label>
+                    <select id="blok" name="blok" required>
+                        <option value="">Pilih Blok</option>
+                        <option value="Rusa">Rusa</option>
+                        <option value="Kangguru">Kangguru</option>
+                        <option value="Kasuari">Kasuari</option>
+                        <option value="Mambruk">Mambruk</option>
+                        <option value="Nuri">Nuri</option>
+                        <option value="Kakak Tua">Kakak Tua</option>
+                        <option value="Merpati">Merpati</option>
+                        <option value="Cendrawasi">Cendrawasi</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label for="date">Waktu:</label>
                     <input type="date" id="date" name="date" required>
-                </div>
-                <div class="form-group">
-                    <label>Shift:</label>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="shift1" name="shift[]" value="Pagi">
-                        <label for="shift1">Dinas Pagi</label>
-                        <input type="checkbox" id="shift2" name="shift[]" value="Siang">
-                        <label for="shift2">Dinas Siang</label>
-                        <input type="checkbox" id="shift3" name="shift[]" value="Malam">
-                        <label for="shift3">Dinas Malam</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Titik:</label>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="Titik1" name="Titik[]" value="Titik1">
-                        <label for="Titik1">Titik 1</label>
-                        <input type="checkbox" id="Titik2" name="Titik[]" value="Titik2">
-                        <label for="Titik2">Titik 2</label>
-                        <input type="checkbox" id="Titik3" name="Titik[]" value="Titik3">
-                        <label for="Titik3">Titik 3</label>
-                        <input type="checkbox" id="Titik4" name="Titik[]" value="Titik4">
-                        <label for="Titik4">Titik 4</label>
-                        <input type="checkbox" id="Titik5" name="Titik[]" value="Titik5">
-                        <label for="Titik5">Titik 5</label>
-                    </div>
                 </div>
                 <div class="form-group">
                     <label for="situasi">Situasi:</label>
@@ -61,6 +68,9 @@
                 </div>
                 <button type="submit">Kirim</button>
             </form>
+        </div>
+        <div class="image-container">
+            <img src="RUSA.jpeg" alt="Gambar di body" class="body-image">
         </div>
     </main>
     <footer>
