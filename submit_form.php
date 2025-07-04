@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'lapasmeraukeaksi@gmail.com'; // Ganti dengan alamat email Google Anda
-        $mail->Password = 'eubxddtlizlecfzt'; // Ganti dengan Password Aplikasi Google
+        $mail->Password = 'brmd zlns dszz gfwe'; // Ganti dengan Password Aplikasi Google
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
