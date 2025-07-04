@@ -9,17 +9,26 @@
 <body>
     <header>
         <div class="logo">
-            <img src="PENGAYOMAN.png" alt="Logo PENGAYOMAN" class="logo-image">
-            <img src="PERMASYARAKAN-removebg-preview.png" alt="Logo PERMASYARAKAN" class="logo-image">
+            <img src="Logo Kemenimipas.png" alt="Logo Kemenimipas" class="logo-image">
+            <img src="Logo Pemasyarakatan.png" alt="Logo PERMASYARAKAN" class="logo-image">
         </div>
-        <h1>E-TROLING LAPAS KLS IIB MERAUKE</h1>
+        <h1 class="animated-header">E-TROLING LAPAS KLS IIB MERAUKE</h1>
     </header>
+
+    <section class="hero">
+        <h2 class="animated-text">KAMI DATANG, SIAP BERTUGAS WASPADA JANGAN-JANGAN</h2>
+    </section>
+
     <main>
         <div class="container">
             <form action="submit_form.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Nama Petugas:</label>
                     <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="file1">Foto Petugas:</label>
+                    <input type="file" id="file1" name="file1" accept="file/*" required>
                 </div>
                 <div class="form-group custom-select">
                     <label for="rupam">Rupam:</label>
@@ -63,8 +72,8 @@
                     <textarea id="situasi" name="situasi" rows="4" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="file">Bukti Dokumentasi:</label>
-                    <input type="file" id="file" name="file" accept="image/*" required>
+                    <label for="file2">Bukti Dokumentasi:</label>
+                    <input type="file" id="file2" name="file2" accept="file/*" required>
                 </div>
                 <button type="submit">Kirim</button>
             </form>
@@ -74,7 +83,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 E-TROLING LAPAS KLS IIB MERAUKE. All rights reserved.</p>
+        <p>&copy; 2025 E-TROLING LAPAS KLS IIB MERAUKE. All rights reserved.</p>
     </footer>
 </body>
 </html>
